@@ -74,6 +74,7 @@ class App extends Component {
         </div>
         <footer> Copyright 2018 | ©</footer>
       </div>;
+
   }
 }
 
