@@ -48,18 +48,48 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
 /* end reset */
 
 
-/* default css settings  */
+/* header blue section css  */
+/* fallbacks  */
  header {
   position: relative;
   height: 417px;
-  overflow: hidden;
+	overflow: hidden;
+	padding-left: 50px;
+	/* padding-right: 50px; */
 }
 
-.header__bg {
+h1 {
+	margin: 0;
+	/* margin-left: 1rem; */
+	margin-top: 1.6rem;
+	padding: 1rem 0;
+	font-size: 2.3rem;
+	font-weight: 900;
+	font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+
+header h1 {
+  position: relative;
+  color: white;
+}
+h6 {
+	margin-top: 55px;
+	color: black;
+			font-family: 'Lato', sans-serif;
+}
+
+
+h3 {
+	font-size: 33px;
+		font-weight: 900;
+		font-family: 'Roboto', sans-serif;
+}
+
+.Header--Gradient {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -71,48 +101,27 @@ table {
   transform: skewY(-4deg);
 	transform-origin: top left;
 		z-index: -9999;
-
 }
-.header__content {
-			display: flex;
+.Header--Content {
+		display: flex;
 		justify-content: space-between;
-
+}
+.Header--Inline__Wrapper {
+display: flex;
 }
 
-h1 {
-	margin: 0;
-	margin-left: 1rem;
-	margin-top: 1.6rem;
-	padding: .5rem 0;
-	font-size: 2.3rem;
-	font-weight: 900;
-		font-family: 'Roboto', sans-serif;
-  text-align: center;
-}
-
-header h1 {
-  position: relative;
-  color: white;
-}
-
-.github {
+.GithubFlag {
 	z-index: 1000;
 	height: 70px;
 }
 
-.logo  {
-		z-index: 1000;
+.ProjectLogo  {
+	z-index: 1000;
 	height: 100px;
-	margin-left: 1rem;
-
+	/* margin-left: 1rem; */
 }
 
-.header__wrapper {
-display: flex;
-}
-
-
-.about {
+.About--Section__Wrapper {
 	display: flex;
 	justify-content: flex-start;
 }
@@ -123,7 +132,7 @@ max-width: 27rem;
 /* max-height: 10rem; */
 margin-top: 2rem;
 padding-bottom: 10px;
-margin-left: 1rem;
+/* margin-left: 1rem; */
 line-height: 1.2rem;
 letter-spacing: .25px;
 	font-family: 'Lato', sans-serif;
@@ -136,7 +145,7 @@ p::first-letter {
 }
 
 
-
+/* button styles */
 a.button {
   display: block;
   position: relative;
@@ -151,15 +160,15 @@ a.button {
   border-radius: 5px;
 	transition: all 0.2s ;
 		font-family: 'Lato', sans-serif;
-		margin-left: 1rem;
+		/* margin-left: 1rem; */
 		text-decoration: none;
 }
 
-.btnOrange {
+.btn {
   background:rgb(255, 235, 87);
 }
 
-.btnOrange.btnPush {
+.btn.btnPush {
   box-shadow: 0px 5px 0px 0px rgb(255, 225, 0);
 }
 
@@ -167,71 +176,58 @@ a.button {
   margin-top: 15px;
   margin-bottom: 5px;
 }
-.btnOrange.btnPush:hover {
+.btn.btnPush:hover {
   box-shadow: 0px 0px 0px 0px   rgb(255, 225, 0);
 }
 
-.btnSlide.btnOrange .top {
+.btnSlide.btn .top {
   background:  rgb(255, 225, 0);
 }
 
+/* end blue section styles */
 
-.about__wrapper {
-	display: flex;
-	justify-content: flex-end;
-	margin-right: 1rem;
-}
-
-.tester {
-	/* padding-top:200px; */
-	display: flex;
-	justify-content: flex-end;
-	flex-direction: row;
-	margin-right: 1rem;
-	margin-top: -1rem;
-}
-
-
-.team {
-max-height: 100px;
-padding: 10px;
-margin: .5rem;
-}
-
-h6 {
-	margin-top: 55px;
-	color: black;
-			font-family: 'Lato', sans-serif;
-}
-
-.tech {
-	max-height: 20px;
-	padding-left: 10px;
-}
-.team__wrapper {
+/* start white section styles */
+.Team--Section__Wrapper {
 display: flex;
 justify-content: flex-end;
 padding: 20px;
 }
 
-h3 {
-	font-size: 33px;
-		font-weight: 900;
-		font-family: 'Roboto', sans-serif;
-}
-
-.mini {
+.ProjectLogo--Small {
 	max-height: 40px;
 	/* padding: 10px; */
 }
 
-.name {
+.Tech--Inline__Wrapper {
+	display: flex;
+	justify-content: flex-end;
+	margin-right: 1.5rem;
+}
+.Team--Inline__Wrapper {
+	display: flex;
+	justify-content: flex-end;
+	/* margin-right: 1rem; */
+}
+
+
+.TechLogo {
+	max-height: 20px;
+	padding-left: 10px;
+}
+
+.TeamPlaceholderImage {
+max-height: 100px;
+padding: 10px;
+margin: .5rem;
+}
+
+.TeamMemeber--Text {
 		font-size: 15px;
 		font-weight: 900;
 		font-family: 'Roboto', sans-serif;
 
 }
-
+/* footer copyright styles */
 footer {
 	height: 50px;
 	position: sticky;
